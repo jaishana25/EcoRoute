@@ -17,7 +17,7 @@ from pathlib import Path
 from django.conf import settings
 
 # Add this to your settings.py
-os.environ["GEMINI_API_KEY"] = "AIzaSyC85rmE5tLo7qNbC6mbGeLE5Lqtt12CtT4"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.

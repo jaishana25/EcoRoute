@@ -1,9 +1,10 @@
 import os
 
 import google.generativeai as genai
+from django.conf import settings
 
 # Configure the Google AI SDK
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+genai.configure(api_key=settings.GEMINI_API_KEY)
 
 generation_config = {
     "temperature": 0.9,
